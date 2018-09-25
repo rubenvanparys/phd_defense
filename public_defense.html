@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Fast and Distributed Model Predictive Control</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="lib/js/reveal/css/reveal.css">
+    <link rel="stylesheet" href="lib/css/include_fonts.css">
+    <link rel="stylesheet" href="kul-theme/kul.css">
+    <link rel="stylesheet" href="lib/css/meco_presentation.css">
+
+    <!-- Printing and PDF exports -->
+    <!-- usage: add "?print-pdf" to URL, e.g. ".../index.html?print-pdf" -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'lib/js/reveal/css/print/pdf.css' : 'lib/js/reveal/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section data-background=var(--my_blue) data-state="plain-slide">
+          <span class="fragment fade-out" data-fragment-index="1" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%; font-size:2.6em; text-align: center; color: white">
+              Fast and Distributed Model Predictive Control
+            </div>
+            <div style="margin-top: 10%; font-size:1.5em; text-align: center; color: white">
+              Tailored solutions for mechatronic systems
+            </div>
+          </span>
+          <span class="fragment fade-in" data-fragment-index="1" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%; font-size:2.6em; text-align: center; color: var(--my_lightblue)">
+              Fast and Distributed Model Predictive Control
+            </div>
+            <div style="margin-top: 10%; font-size:1.5em; text-align: center; color: white">
+              <span style="color:var(--my_lightblue)">Tailored solutions for </span>mechatronic systems
+            </div>
+          </span>
+        </section>
+
+        <section data-background-image="img/mechatronics.jpg" style="color:white">
+          <span class="fragment fade-out" data-fragment-index="1" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 20%; font-size:4em; text-align:center; color:white">
+              Mechatronics
+            </div>
+          </span>
+          <span class="fragment fade-in" data-fragment-index="1" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 25%; font-size:2.5em; text-align:center; color:white">
+              Mechanics + Electronics
+            </div>
+            <span class="fragment" data-fragment-index="2" style="position: absolute; left: 140px; font-size:1.5em; text-align:center; color:white">
+              (it moves)
+            </span>
+            <span class="fragment" data-fragment-index="3" style="position: absolute; left: 510px; font-size:1.5em; text-align:center; color:white">
+              (it has a computer)
+            </span>
+          </span>
+        </section>
+
+        <section data-background-image="img/agvs.jpg" data-background-transition="fade">
+        </section>
+
+        <section data-background-image="img/drone.jpg" data-background-size="90%" data-background-transition="fade">
+        </section>
+
+        <section data-background-image="img/car.jpg" data-background-transition="fade">
+        </section>
+
+        <section data-background-image="img/robotarm.png" data-background-size="45%" data-background-transition="fade">
+        </section>
+
+        <section>
+          <h1>Mechatronic system</h1>
+          <span class="fragment fade-out" data-fragment-index="1" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/system.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="1" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/system_car.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="2" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/system_drone.svg">
+            </div>
+          </span>
+
+          <span class="fragment fade-in-then-out" data-fragment-index="3" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/system_robotarm.svg">
+            </div>
+          </span>
+        </section>
+
+        <section data-background=var(--my_blue) data-state="plain-slide">
+          <div style="margin-top: 10%; font-size:2.6em; text-align: center; color: white">
+            <span style="color:var(--my_lightblue)">Fast and Distributed Model Predictive</span> Control
+          </div>
+          <div style="margin-top: 10%; font-size:1.5em; text-align: center; color: white">
+            <span style="color:var(--my_lightblue)">Tailored solutions for </span>mechatronic systems
+          </div>
+        </section>
+
+        <section>
+          <h1>Control</h1>
+          <span class="fragment fade-out" data-fragment-index="1" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/control0.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="1" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/control1.svg">
+            </div>
+          </span>
+        </section>
+
+        <section data-background-video="mov/fail.mp4" data-background-video-muted="true">
+          <div class="fragment replace" data-fragment-index="1"></div>
+          <div class="fragment replace" data-fragment-index="2" style="color: #FFFFFF">
+            We're not there yet
+          </div>
+        </section>
+
+
+    <!-- Bottom bar and (floating) logo -->
+<!--     <div id="bar"></div>
+    <div id="logo-container"></div> -->
+
+    <!-- Reveal.js and Template Specific Options -->
+    <script src="lib/js/reveal/lib/js/head.min.js"></script>
+    <script src="lib/js/reveal/js/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        history: true,
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+        transitionSpeed: 'fast', // default/fast/slow
+        //backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+        controls: false,
+        center: false,
+        touch: true,
+        slideNumber: false,
+        maxScale: 10.0,
+
+        math: {
+          mathjax: 'lib/js/mathjax/MathJax.js',
+          config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+        },
+
+        dependencies: [
+          { src: 'lib/js/reveal/lib/js/classList.js' },
+          { src: 'lib/js/reveal/plugin/math/math.js', async: true },
+          // { src: 'plugin/math-katex/math-katex.js', async: true },
+          { src: 'lib/js/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'lib/js/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'lib/js/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        ]
+      });
+    </script>
+
+    <!-- Formatting bottom bar and logo -->
+    <script type="text/javascript">
+      /* some JS for ...
+      *    - placing (in the right size) the bottom bar
+      *    - placing the small KUL logo
+      */
+      function setBarProperties() {
+        // var snums = document.getElementsByClassName('slide-number')[0];
+        var logo = document.getElementById('logo-container');
+        var bar = document.getElementById('bar');
+
+        // adapt this value (0.045) if the bar height is not correct
+        var h = window.innerHeight*0.045;
+        // check for minimal height (any smaller and we can't read the slide number)
+        if (h <= 20) {
+          bar.style.minHeight = "20px";
+          // snums.style.bottom = "2px";
+          logo.style.bottom = "15px";
+          // alert();
+        } else {
+          bar.style.minHeight = h + "px";
+          // snums.style.bottom = "1%";
+          logo.style.bottom = "3%";
+        }
+      }
+      window.onload = setBarProperties;
+      window.onresize = setBarProperties;
+      window.onkeydown = setBarProperties;
+    </script>
+
+    <!-- SVG injector script -->
+    <script src="lib/js/svginjector/svg-injector.js"></script>
+    <script>
+      SVGInjector(document.querySelectorAll('img.inject-svg'));
+    </script>
+  </body>
+</html>
