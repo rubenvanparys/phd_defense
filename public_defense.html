@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="stylesheet" href="lib/js/reveal/css/reveal.css">
+    <link rel="stylesheet" href="lib/js/reveal/lib/css/zenburn.css">
     <link rel="stylesheet" href="lib/css/include_fonts.css">
     <link rel="stylesheet" href="kul-theme/kul.css">
     <link rel="stylesheet" href="lib/css/meco_presentation.css">
@@ -96,10 +97,14 @@
               <img style="width: 100%" class="inject-svg" data-src="img/system_drone.svg">
             </div>
           </span>
-
           <span class="fragment fade-in-then-out" data-fragment-index="3" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
             <div style="margin-top: 10%;text-align:center;">
               <img style="width: 100%" class="inject-svg" data-src="img/system_robotarm.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="4" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/system_agv.svg">
             </div>
           </span>
         </section>
@@ -116,24 +121,629 @@
         <section>
           <h1>Control</h1>
           <span class="fragment fade-out" data-fragment-index="1" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
-            <div style="margin-top: 10%;text-align:center;">
-              <img style="width: 100%" class="inject-svg" data-src="img/control0.svg">
+            <div style="margin-top: 20%; font-size:1.5em; color:var(--my_gray); text-align:center;">
+              Make the system behave like we want
             </div>
           </span>
           <span class="fragment fade-in-then-out" data-fragment-index="1" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
             <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/control0.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="2" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
               <img style="width: 100%" class="inject-svg" data-src="img/control1.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="4" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/control2.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="5" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/control3.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="6" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/control_car0.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="7" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/control_car1.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="8" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/control_car2.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="9" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/control_car3.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="10" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/control_car4.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="11" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/control_thermo0.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="12" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/control_thermo1.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="13" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/control_thermo2.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="14" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/control_thermo3.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="15" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/control_agv0.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="16" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/control_agv1.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="17" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/control_agv2.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="18" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/control_agv3.svg">
             </div>
           </span>
         </section>
 
-        <section data-background-video="mov/fail.mp4" data-background-video-muted="true">
-          <div class="fragment replace" data-fragment-index="1"></div>
-          <div class="fragment replace" data-fragment-index="2" style="color: #FFFFFF">
-            We're not there yet
+        <section>
+          <h1>Control</h1>
+          <span class="fragment fade-out" data-fragment-index="1" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="height: 100%" class="inject-svg" data-src="img/control_sequence_1.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="1" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="height: 100%" class="inject-svg" data-src="img/control_sequence_2.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="2" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="height: 100%" class="inject-svg" data-src="img/control_sequence_3.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="3" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="height: 100%" class="inject-svg" data-src="img/control_sequence_4.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="4" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="height: 100%" class="inject-svg" data-src="img/control_sequence_5.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="5" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="height: 100%" class="inject-svg" data-src="img/control_sequence_6.svg">
+            </div>
+          </span>
+        </section>
+
+        <section>
+          <h1>Control</h1>
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/thermo_control.svg">
+            </div>
+        </section>
+
+        <section data-background-video="mov/garbage.mov" data-background-size="90%" data-background-video-muted="true">
+          <span class="fragment fade-out" data-fragment-index="1" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 20%; font-size:1.8em; color:white; text-align:center;">
+              Simple control can lead to ...
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="1" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 20%; font-size:1.8em; color:white; text-align:center;">
+              Simple control can lead to ... surprises
+            </div>
+          </span>
+          <span class="fragment fade-in" data-fragment-index="2" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 20%; font-size:1.8em; color:white; text-align:center;">
+              We should do better
+            </div>
+          </span>
+        </section>
+
+        <section data-background=var(--my_blue) data-state="plain-slide">
+          <div style="margin-top: 10%; font-size:2.6em; text-align: center; color: white">
+            <span style="color:var(--my_lightblue)">Fast and Distributed</span> Model Predictive Control
+          </div>
+          <div style="margin-top: 10%; font-size:1.5em; text-align: center; color: white">
+            <span style="color:var(--my_lightblue)">Tailored solutions for mechatronic systems</span>
           </div>
         </section>
 
+        <section>
+          <h1>Model predictive control</h1>
+          <div class="fragment fade-in" data-fragment-index="2" style="margin-top:10%; width: 100%; color:var(--my_gray)">
+            <ul class="stretched">
+              <li>Decision based on prediction of system's behavior</li>
+              <!-- <li>Decision made using optimization</li> -->
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="img/agvs.jpg" data-background-transition="fade">
+        </section>
+
+        <section>
+          <h1>Model predictive control</h1>
+          <span class="fragment fade-out" data-fragment-index="0" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:white; text-align:center;">
+              without prediction
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc0.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="0" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              without prediction
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc0.svg">
+            </div>
+          </span>
+          <span class="fragment replace" data-fragment-index="1" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              without prediction
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc9.svg">
+            </div>
+          </span>
+          <span class="fragment replace" data-fragment-index="2" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              without prediction
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc10.svg">
+            </div>
+          </span>
+          <span class="fragment replace" data-fragment-index="3" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              without prediction
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc11.svg">
+            </div>
+          </span>
+          <span class="fragment replace" data-fragment-index="4" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              without prediction
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc12.svg">
+            </div>
+          </span>
+          <span class="fragment replace" data-fragment-index="5" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              without prediction
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc13.svg">
+            </div>
+          </span>
+          <span class="fragment replace" data-fragment-index="6" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              without prediction
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc14.svg">
+            </div>
+          </span>
+          <span class="fragment replace" data-fragment-index="7" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              without prediction
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc15.svg">
+            </div>
+          </span>
+          <span class="fragment replace" data-fragment-index="8" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              without prediction
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc16.svg">
+            </div>
+          </span>
+          <span class="fragment replace" data-fragment-index="9" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              without prediction
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc17.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="10" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              with prediction
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc0.svg">
+            </div>
+          </span>
+          <span class="fragment replace" data-fragment-index="11" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              with prediction
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc1.svg">
+            </div>
+          </span>
+          <span class="fragment replace" data-fragment-index="12" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              with prediction
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc2.svg">
+            </div>
+          </span>
+          <span class="fragment replace" data-fragment-index="13" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              with prediction
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc3.svg">
+            </div>
+          </span>
+          <span class="fragment replace" data-fragment-index="14" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              with prediction
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc4.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="15" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              with prediction
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc5a.svg">
+            </div>
+          </span>
+          <span class="fragment replace" data-fragment-index="16" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              with prediction
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc5.svg">
+            </div>
+          </span>
+          <span class="fragment replace" data-fragment-index="17" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              with prediction
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc6.svg">
+            </div>
+          </span>
+          <span class="fragment replace" data-fragment-index="18" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              with prediction
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc7.svg">
+            </div>
+          </span>
+          <span class="fragment replace" data-fragment-index="19" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              with prediction
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc8.svg">
+            </div>
+          </span>
+        </section>
+
+        <section>
+          <h1>Model predictive control</h1>
+          <div class="fragment fade-out" data-fragment-index="1" style="margin-top:10%; width: 100%; color:var(--my_gray); position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <ul class="stretched">
+              <li>Decision based on prediction of system's behavior</li>
+              <!-- <li>Decision made using optimization</li> -->
+            </ul>
+          </div>
+          <div class="fragment fade-in" data-fragment-index="1" style="margin-top:10%; width: 100%; color:var(--my_gray); position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <ul class="stretched">
+              <li>Decision based on prediction of system's behavior</li>
+              <br>
+              <li>Decision made using optimization</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h1>Model predictive control</h1>
+          <span class="fragment replace" data-fragment-index="0" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              make optimal decision
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc0.svg">
+            </div>
+          </span>
+<!--           <span class="fragment replace" data-fragment-index="0" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:white; text-align:center;">
+              make optimal decision
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc1.svg">
+            </div>
+          </span> -->
+          <span class="fragment replace" data-fragment-index="0" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              optimal decision
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc1.svg">
+            </div>
+          </span>
+          <span class="fragment replace" data-fragment-index="1" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+              non-optimal decision
+            </div>
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 100%" class="inject-svg" data-src="img/agv_mpc18.svg">
+            </div>
+          </span>
+        </section>
+
+        <section>
+          <h1>Model predictive control</h1>
+          <span class="fragment fade-out" data-fragment-index="0" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 80%" class="inject-svg" data-src="img/optimization0.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="0" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 80%" class="inject-svg" data-src="img/optimization1.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="1" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 80%" class="inject-svg" data-src="img/optimization2.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="2" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 80%" class="inject-svg" data-src="img/optimization3.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="3" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 80%" class="inject-svg" data-src="img/optimization4.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="4" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 80%" class="inject-svg" data-src="img/optimization5.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="5" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 80%" class="inject-svg" data-src="img/optimization6.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="6" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 80%" class="inject-svg" data-src="img/optimization7.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="7" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 80%" class="inject-svg" data-src="img/optimization8.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="8" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 0%;text-align:center;">
+              <img style="width: 80%" class="inject-svg" data-src="img/optimization9.svg">
+            </div>
+          </span>
+        </section>
+
+        <section data-background=var(--my_blue) data-state="plain-slide">
+          <span class="fragment fade-out" data-fragment-index="1" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%; font-size:2.6em; text-align: center; color: white">
+              Fast and Distributed Model Predictive Control
+            </div>
+            <div style="margin-top: 10%; font-size:1.5em; text-align: center; color: white">
+              Tailored solutions for mechatronic systems
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="1" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%; font-size:2.6em; text-align: center; color: var(--my_lightblue)">
+              <span style="color:white">Fast</span> and <span style="color:white">Distributed</span> Model Predictive Control
+            </div>
+            <div style="margin-top: 10%; font-size:1.5em; text-align: center; color: var(--my_lightblue)">
+              Tailored solutions for mechatronic systems
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="2" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%; font-size:2.6em; text-align: center; color: var(--my_lightblue)">
+              <span style="color:white">Fast</span> and Distributed Model Predictive Control
+            </div>
+            <div style="margin-top: 10%; font-size:1.5em; text-align: center; color: var(--my_lightblue)">
+              Tailored solutions for mechatronic systems
+            </div>
+          </span>
+        </section>
+
+
+        <section data-background-image="img/racecar.jpg" style="color:white">
+            <div style="margin-top: 20%; font-size:2em; text-align:center; color:white">
+              Fast systems require fast control
+            </div>
+        </section>
+
+        <section>
+          <h1>Fast control</h1>
+          <span class="fragment fade-out" data-fragment-index="1" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="height: 100%" class="inject-svg" data-src="img/control_sequence_5.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="1" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="height: 100%" class="inject-svg" data-src="img/control_sequence_fast.svg">
+            </div>
+          </span>
+        </section>
+
+        <section>
+          <h1>Fast control</h1>
+          <div style="margin-top: 0%; font-size:1.8em; color:var(--my_gray); text-align:center;">
+            what is possible?
+          </div>
+          <span class="fragment fade-out" data-fragment-index="2" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 40%" class="inject-svg" data-src="img/tradeoff.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="2" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 40%" class="inject-svg" data-src="img/tradeoff1.svg">
+            </div>
+          </span>
+          <span class="fragment fade-in-then-out" data-fragment-index="3" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+            <div style="margin-top: 10%;text-align:center;">
+              <img style="width: 40%" class="inject-svg" data-src="img/tradeoff2.svg">
+            </div>
+          </span>
+        </section>
+
+        <section>
+          <h1>Fast control</h1>
+          <center>
+          <table>
+            <td width=50%>
+              <div style="margin-top: 30%; font-size:1.2em; color:var(--my_gray); text-align:center;">
+                Very fast control
+              </div>
+                <div style="margin-top: 10%; font-size:1.2em; color:var(--my_gray); text-align:center;">
+                simple problems
+              </div>
+            </td>
+            <td width=50%>
+              <div style="margin-top: 30%; font-size:1.2em; color:var(--my_gray); text-align:center;">
+                Reasonably fast control
+              </div>
+              </div>
+                <div style="margin-top: 10%; font-size:1.2em; color:var(--my_gray); text-align:center;">
+                complex problems
+              </div>
+            </td>
+          </table>
+        </center>
+        </section>
+
+        <section>
+          <h1>Fast control</h1>
+            <div style="margin-top: 18%; font-size:1.2em; color:var(--my_gray); text-align:center;">
+              Very fast control
+            </div>
+            <div style="margin-top: 5%; font-size:1.2em; color:var(--my_gray); text-align:center;">
+              simple problems
+            </div>
+            <div class="fragment fade-in" data-fragment-index="2" style="margin-top: 5%; font-size:0.8em; color:var(--my_gray); text-align:center;">
+              (linear time-invariant systems with convex constraints)
+            </div>
+          </table>
+        </center>
+        </section>
+
+        <section data-background-image="img/crane.jpg" data-background-transition="fade">
+        </section>
+
+        <section data-background-image="img/harddisk.jpg" data-background-transition="fade" data-background-size="60%">
+        </section>
+
+        <section data-background-image="img/activesuspension.jpg" data-background-transition="fade">
+        </section>
+
+        <section>
+          <h1>Very fast control</h1>
+          <div style="margin-top: 0%; font-size:1.5em; text-align:center; color:var(--my_gray)">
+            Real-time proximal gradient method
+          </div>
+          <center>
+          <table>
+              <td width=50% align="center">
+                <span class="fragment replace" data-fragment-index="1">
+                  <img style="margin-top: 30%;" class="inject-svg" data-src="img/controller.svg">
+                </span>
+                <span class="fragment replace" data-fragment-index="1">
+                  <img style="margin-top: 30%; " class="inject-svg" data-src="img/controller.svg">
+                </span>
+                <span class="fragment replace" data-fragment-index="2">
+                  <img style="margin-top: 30%; " class="inject-svg" data-src="img/controller.svg">
+                </span>
+                <span class="fragment replace" data-fragment-index="3">
+                  <img style="margin-top: 20%; margin-left:30%; width: 85%;" data-src="img/laptop.jpg">
+                </span>
+                <span class="fragment replace" data-fragment-index="4">
+                  <img style="margin-top: 20%; margin-left:10%; width: 75%;" data-src="img/arduino.png">
+                </span>
+              </td>
+              <td width=50% style="position:absolute;">
+                <div style="margin-top:30%; width: 100%; color:var(--my_gray)">
+                  <ul class="stretched">
+                    <li class="fragment fade-in" data-fragment-index="1">Very simple steps</li>
+                    <li class="fragment fade-in" data-fragment-index="2">Very fast execution</li>
+                  </ul>
+                </div>
+              </td>
+          </table>
+          <span class="fragment fade-in-then-out" data-fragment-index="3">
+            <div style="margin-top: 5%; text-align:center;  color:var(--my_gray); position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">1000000 times per second</div>
+          </span>
+          <span class="fragment fade-in" data-fragment-index="4">
+            <div style="margin-top: 5%; text-align:center;  color:var(--my_gray); position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">100 times per second</div>
+          </span>
+          </center>
+        </section>
+
+        <section data-background-image="img/success.jpg">
+          <div style="margin-top: 30%; font-size:2em; text-align:center; color:white">
+            200 times faster compared to existing methods
+          </div>
+        </section>
+
+        <section data-background-image="img/success_mirror.jpg">
+          <div style="margin-top: 30%; font-size:2em; text-align:center; color:white">
+            performance decrease only 0.8% compared to existing methods
+          </div>
+        </section>
 
     <!-- Bottom bar and (floating) logo -->
 <!--     <div id="bar"></div>

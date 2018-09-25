@@ -27,6 +27,7 @@
   --my_blue: rgb( 25, 94, 175);
   --my_red: rgb( 217, 26, 40);
   --my_lightblue: rgb( 94, 155, 232);
+  --my_gray: rgb(54, 54, 54);
   --col-kul1: rgba(  0,  64, 122, 1.0); /* KUL logo's dark blue */
   --col-kul2: rgba( 82, 189, 236, 1.0); /* KUL logo's light blue */
   --col-kul3: rgba( 31, 171, 231, 1.0); /* Official light turquoise */
@@ -244,3 +245,29 @@ html.fig-bg div.slide-background.present {
   border: 2px solid #116F8A;
   padding: 4px;
 }
+
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 50%;
+  margin: 0px auto;
+  /*margin: 0px;*/
+  text-align: left;
+  font-size: 0.8em;
+  font-family: monospace;
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
+
+.reveal code {
+  font-family: monospace;
+  text-transform: none; }
+
+.reveal pre code {
+  display: block;
+  padding: 0px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal;
+}
+
