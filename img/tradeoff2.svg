@@ -59,7 +59,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="-234.433"
+     inkscape:cx="-463.73763"
      inkscape:cy="433.93126"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -81,7 +81,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -146,7 +146,7 @@
          id="tspan13176"
          x="139.40224"
          y="495.41263"
-         style="font-size:50px;text-align:center;text-anchor:middle">Very fast control</tspan><tspan
+         style="font-size:50px;text-align:center;text-anchor:middle">very fast control</tspan><tspan
          sodipodi:role="line"
          x="139.40224"
          y="557.9126"
@@ -164,7 +164,7 @@
          y="624.71234"
          x="150.71596"
          id="tspan13182"
-         sodipodi:role="line">Reasonably fast control</tspan><tspan
+         sodipodi:role="line">reasonably fast control</tspan><tspan
          style="font-size:50px;text-align:center;text-anchor:middle"
          id="tspan13184"
          y="687.21234"

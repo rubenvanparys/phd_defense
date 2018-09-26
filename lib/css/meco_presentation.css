@@ -26,6 +26,7 @@
   --kul_green: rgb( 117, 138, 19);
   --my_blue: rgb( 25, 94, 175);
   --my_red: rgb( 217, 26, 40);
+  --my_green: rgb(117, 162, 54);
   --my_lightblue: rgb( 94, 155, 232);
   --my_gray: rgb(54, 54, 54);
   --col-kul1: rgba(  0,  64, 122, 1.0); /* KUL logo's dark blue */
@@ -269,5 +270,14 @@ html.fig-bg div.slide-background.present {
   overflow: auto;
   max-height: 400px;
   word-wrap: normal;
+}
+
+.reveal sup {
+  vertical-align: super;
+  font-size: 80%;
+}
+.reveal sub {
+  vertical-align: sub;
+  font-size: 80%;
 }
 
