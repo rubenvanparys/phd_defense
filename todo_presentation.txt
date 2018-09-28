@@ -1,0 +1,9 @@
+todo_presentation
+-----------------
+
++ no capital
++ control sequence no flikker
+- laptop/arduino speed
+- optimization bigger
+- optimization minimize in blue
+- control
